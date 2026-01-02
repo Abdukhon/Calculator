@@ -1,0 +1,27 @@
+body{
+    margin: 1px;
+}
+.input{
+    grid-column: 1 / span 4;
+    width: 200px;
+    margin: 1px;
+}
+#enter{
+    display: inline-block;
+    height: 20px;
+    width: 100%;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100px;
+}
+.calculator button{
+    display: inline-block;
+    text-align: center;
+    margin: 1px;
+    padding: 20px;
+    background-color: #F27e34;
+    color: white;
+    border: 2px solid black;
+}
