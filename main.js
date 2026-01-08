@@ -13,3 +13,6 @@ function calculating() {
         enter.value = "Error";
     }
 }
+function Delete() {
+    enter.value = enter.value.slice(0, -1);
+}

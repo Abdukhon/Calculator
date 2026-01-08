@@ -7,27 +7,35 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="input">
-        <input type="text" id="enter" disabled>
-    </div>
-    <div class="calculator">
-        <button onclick="number('+')">+</button>
-        <button onclick="number('1')">1</button>
-        <button onclick="number('2')">2</button>
-        <button onclick="number('3')">3</button>
-        <button onclick="number('-')">-</button>
-        <button onclick="number('4')">4</button>
-        <button onclick="number('5')">5</button>
-        <button onclick="number('6')">6</button>
-        <button onclick="number('/')">/</button>
-        <button onclick="number('7')">7</button>
-        <button onclick="number('8')">8</button>
-        <button onclick="number('9')">9</button>
-        <button onclick="number('*')">*</button>
-        <button onclick="number('.')">.</button>
-        <button onclick="number('0')">0</button>
-        <button onclick="Clear()">C</button>
-        <button onclick="calculating()">=</button>
+    <div class="body">
+        <div class="input">
+            <input type="text" id="enter" disabled>
+        </div>
+        <div class="calculator">
+            <button onclick="Clear()" class="item">C</button>
+            <button onclick="Delete()" class="item">DEL</button>
+            <button onclick="number('%')" class="item">%</button>
+            <button onclick="number('/')" class="item">/</button>
+            <button onclick="number('7')" class="item">7</button>
+            <button onclick="number('8')" class="item">8</button>
+            <button onclick="number('9')" class="item">9</button>
+            <button onclick="number('*')" class="item">*</button>
+            <button onclick="number('4')" class="item">4</button>
+            <button onclick="number('5')" class="item">5</button>
+            <button onclick="number('6')" class="item">6</button>
+            <button onclick="number('-')" class="item">-</button>
+            <button onclick="number('1')" class="item">1</button>
+            <button onclick="number('2')" class="item">2</button>
+            <button onclick="number('3')" class="item">3</button>
+            <button onclick="number('+')" class="item">+</button>
+            <div class="thesis">
+                <button onclick="number('(')" class="open">(</button>
+                <button onclick="number(')')" class="close">)</button>
+            </div>
+            <button onclick="number('0')" class="item">0</button>
+            <button onclick="number('.')" class="item">.</button>
+            <button onclick="calculating()" class="equal">=</button>
+        </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
 </body>
