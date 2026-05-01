@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <div class="display">
+            <!-- Top Bildschirm, wo geben wir die Nummern und Operatoren ein -->
+            <div id="expression"></div>
+            <!-- Unter Bildschirm, wo wird das Ergebnis angezeigt -->
+            <div id="result"></div>
+        </div>
+        <!-- Alle Knöpfe -->
+        <div class="buttons">
+            <button class="clear" id="clearBtn">C</button>
+            <button class="delete" id="deleteBtn">DEL</button>
+            <button id="percentBtn">%</button>
+            <button class="operator" data-operator="/">/</button>
+
+            <button data-digit="7">7</button>
+            <button data-digit="8">8</button>
+            <button data-digit="9">9</button>
+            <button class="operator" data-operator="*">*</button>
+
+            <button data-digit="4">4</button>
+            <button data-digit="5">5</button>
+            <button data-digit="6">6</button>
+            <button class="operator" data-operator="-">-</button>
+
+            <button data-digit="1">1</button>
+            <button data-digit="2">2</button>
+            <button data-digit="3">3</button>
+            <button class="operator" data-operator="+">+</button>
+
+            <button data-digit="0">0</button>
+            <button data-digit=".">.</button>
+            <button class="equals" id="equalsBtn">=</button>
+        </div> 
+    </div>
+    <!-- Bereich für die Historie -->
+    <div class="history-expression">
+        <!-- Knopf zum Löschen der Historie -->
+        <button id="clearHistoryBtn">Clear All</button>
+        <!-- Liste der Historie -->
+        <ul id="history"></ul>
+    </div>
+</body>
+</html>
